@@ -1,0 +1,39 @@
+{
+  "circle": {
+    "mean_curvature": 0.1,
+    "max_curvature": 0.1,
+    "reversal_count": 0,
+    "corner_count": 0,
+    "corr_window_s": 12.566,
+    "window_vs_delay": 29.0,
+    "perimeter": 62.83
+  },
+  "square": {
+    "mean_curvature": 0.0,
+    "max_curvature": "inf(vertex)",
+    "reversal_count": 0,
+    "corner_count": 4,
+    "corr_window_s": 3.2,
+    "window_vs_delay": 7.38,
+    "perimeter": 80.0
+  },
+  "lemniscate": {
+    "mean_curvature": 0.27,
+    "max_curvature": 0.684,
+    "reversal_count": 2,
+    "corner_count": 0,
+    "corr_window_s": 0.0,
+    "window_vs_delay": 0.0,
+    "perimeter": 36.71,
+    "note": "smooth; 2 high-curvature lobes (center crossing)"
+  },
+  "zigzag": {
+    "mean_curvature": 0.0,
+    "max_curvature": "inf(vertex)",
+    "reversal_count": 4,
+    "corner_count": 11,
+    "corr_window_s": 1.414,
+    "window_vs_delay": 3.26,
+    "perimeter": 70.71
+  }
+}
