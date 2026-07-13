@@ -1,0 +1,98 @@
+{
+ "circle_tr0.30_N5_T0": {
+  "rmse_mean": 1.1263,
+  "rmse_std": 0.0675,
+  "rmse_ci95": 0.0187,
+  "gamma_mean": 0.6258,
+  "mc_runs": 50,
+  "seed_first": 2844030335
+ },
+ "circle_tr0.30_N5_T1": {
+  "rmse_mean": 1.0915,
+  "rmse_std": 0.0542,
+  "rmse_ci95": 0.015,
+  "gamma_mean": 0.2036,
+  "mc_runs": 50,
+  "seed_first": 3929839740
+ },
+ "circle_tr0.30_N5_T2": {
+  "rmse_mean": 1.5391,
+  "rmse_std": 0.0531,
+  "rmse_ci95": 0.0147,
+  "gamma_mean": 0.4125,
+  "mc_runs": 50,
+  "seed_first": 375358771
+ },
+ "square_tr0.30_N5_T0": {
+  "rmse_mean": 1.2906,
+  "rmse_std": 0.0613,
+  "rmse_ci95": 0.017,
+  "gamma_mean": 0.627,
+  "mc_runs": 50,
+  "seed_first": 1358465451
+ },
+ "square_tr0.30_N5_T1": {
+  "rmse_mean": 1.4072,
+  "rmse_std": 0.0412,
+  "rmse_ci95": 0.0114,
+  "gamma_mean": 0.2028,
+  "mc_runs": 50,
+  "seed_first": 8065236
+ },
+ "square_tr0.30_N5_T2": {
+  "rmse_mean": 1.5623,
+  "rmse_std": 0.0704,
+  "rmse_ci95": 0.0195,
+  "gamma_mean": 0.3854,
+  "mc_runs": 50,
+  "seed_first": 4280481432
+ },
+ "lemniscate_tr0.30_N5_T0": {
+  "rmse_mean": 1.4119,
+  "rmse_std": 0.0605,
+  "rmse_ci95": 0.0168,
+  "gamma_mean": 0.6246,
+  "mc_runs": 50,
+  "seed_first": 1597798713
+ },
+ "lemniscate_tr0.30_N5_T1": {
+  "rmse_mean": 1.5827,
+  "rmse_std": 0.0499,
+  "rmse_ci95": 0.0138,
+  "gamma_mean": 0.2039,
+  "mc_runs": 50,
+  "seed_first": 2687243785
+ },
+ "lemniscate_tr0.30_N5_T2": {
+  "rmse_mean": 1.3796,
+  "rmse_std": 0.0957,
+  "rmse_ci95": 0.0265,
+  "gamma_mean": 0.547,
+  "mc_runs": 50,
+  "seed_first": 2259181417
+ },
+ "zigzag_tr0.30_N5_T0": {
+  "rmse_mean": 1.9914,
+  "rmse_std": 0.0811,
+  "rmse_ci95": 0.0225,
+  "gamma_mean": 0.625,
+  "mc_runs": 50,
+  "seed_first": 4216584244
+ },
+ "zigzag_tr0.30_N5_T1": {
+  "rmse_mean": 2.1797,
+  "rmse_std": 0.0476,
+  "rmse_ci95": 0.0132,
+  "gamma_mean": 0.2032,
+  "mc_runs": 50,
+  "seed_first": 3306443468
+ },
+ "zigzag_tr0.30_N5_T2": {
+  "rmse_mean": 2.0228,
+  "rmse_std": 0.2051,
+  "rmse_ci95": 0.0569,
+  "gamma_mean": 0.507,
+  "mc_runs": 50,
+  "seed_first": 933173441
+ }
+}
