@@ -1,0 +1,64 @@
+{
+ "config": {
+  "MC": 50,
+  "purpose": "#12 mechanism RMSE confirmation at MC=50"
+ },
+ "results": {
+  "circle_N5_tr0.05": {
+   "rmse_mean": 0.8299,
+   "rmse_std": 0.0242,
+   "rmse_ci95": 0.0067,
+   "gamma_mean": 0.9925,
+   "mc_runs": 50
+  },
+  "circle_N5_tr0.20": {
+   "rmse_mean": 0.9457,
+   "rmse_std": 0.0473,
+   "rmse_ci95": 0.0131,
+   "gamma_mean": 0.8036,
+   "mc_runs": 50
+  },
+  "circle_N200_tr0.05": {
+   "rmse_mean": 0.8063,
+   "rmse_std": 0.018,
+   "rmse_ci95": 0.005,
+   "gamma_mean": 0.9381,
+   "mc_runs": 50
+  },
+  "circle_N200_tr0.20": {
+   "rmse_mean": 0.8081,
+   "rmse_std": 0.0241,
+   "rmse_ci95": 0.0067,
+   "gamma_mean": 0.7901,
+   "mc_runs": 50
+  },
+  "zigzag_N5_tr0.05": {
+   "rmse_mean": 1.4229,
+   "rmse_std": 0.0163,
+   "rmse_ci95": 0.0045,
+   "mc_runs": 50,
+   "gamma_mean": 0.9868
+  },
+  "zigzag_N5_tr0.20": {
+   "rmse_mean": 1.4444,
+   "rmse_std": 0.0341,
+   "rmse_ci95": 0.0094,
+   "mc_runs": 50,
+   "gamma_mean": 0.8025
+  },
+  "zigzag_N200_tr0.05": {
+   "rmse_mean": 1.4453,
+   "rmse_std": 0.0031,
+   "rmse_ci95": 0.0009,
+   "mc_runs": 50,
+   "gamma_mean": 0.9333
+  },
+  "zigzag_N200_tr0.20": {
+   "rmse_mean": 1.4379,
+   "rmse_std": 0.0078,
+   "rmse_ci95": 0.0022,
+   "mc_runs": 50,
+   "gamma_mean": 0.7861
+  }
+ }
+}

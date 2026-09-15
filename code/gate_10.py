@@ -14,7 +14,7 @@ predeclared 규칙 (돌리기 전에 고정):
   - GATE STOP: 둘 다 위 기준 미달 → 48k 태우기 전 adversary 재설계.
 
 정의 (PhaseA Freeze v2):
-  T1 = reference target-directed direction 의 반대 (open-loop). iang 은 에이전트 상태→lookahead
+  T1 = reference target-directed direction 의 반대 (open-loop). iang 은 에이전트 상태→look-ahead
        reference target point 방향 (공개 가시) — honest 내부모델 아님.
   T3 = 직전 voting window 의 *공개 aggregate* crowd command 반대 (realistic, not oracle).
 """

@@ -1,5 +1,5 @@
 """
-campaign.py  —  Paper 2 ("When Crowd Size Stops Mattering") 본 캠페인 [LOCKED v2]
+campaign.py  —  main campaign [LOCKED v2]
 ================================================================
 PhaseA Freeze v2 동결값:
   궤적   : circle, square, lemniscate, zigzag  (12N 정렬)
@@ -9,13 +9,13 @@ PhaseA Freeze v2 동결값:
   MC     : 50
   속도   : fixed v=5.0 (speed sweep {2,5} 는 별도 supp)
   seed   : SeedSequence([campaign, traj_id, N, tr_milli, model_id, coh_pct, k, mc]) → uint32
-           (조건간 충돌 없음, 각 realization 독립 — R1 #7)
+           (조건간 충돌 없음, 각 realisation 독립 — R1 #7)
   로깅   : rmse, gamma_mean(=R̄), gamma_std, realized_troll_count, seed
 
   T3/T3o : 본 캠페인 미사용. 게이트 결과를 supp 진단(stabilizer)으로 보고.
   T2 k-sensitivity {5,10,20} : 대표 슬라이스 supp (full grid 아님).
 
-산출: campaign_main_mc50.json  (조건별 mean/std/ci95 + realized count + seed)
+산출: campaign_main_mc50.json  (조건별 mean/std/ci95 + realised count + seed)
 실행: python campaign.py            (full 72,000 runs — BK 환경에서)
       python campaign.py --smoke    (파이프라인 검증용 36 runs, 결과해석 안 함)
 """
@@ -54,12 +54,12 @@ def manifest():
     print(f"           = {len(TRAJ_BUILD)*len(NS)*len(TRS)*len(MODELS)} conditions × {MC} = {total:,} runs")
     return total
 
-def aggregate(rmses, gammas, realized, seeds):
+def aggregate(rmses, gammas, realised, seeds):
     a=np.array(rmses)
     return {'rmse_mean':round(float(a.mean()),4),'rmse_std':round(float(a.std()),4),
             'rmse_ci95':round(float(1.96*a.std()/np.sqrt(len(a))),4),
             'gamma_mean':round(float(np.mean(gammas)),4),
-            'realized_troll_count':realized,'mc_runs':len(a),
+            'realized_troll_count':realised,'mc_runs':len(a),
             'seed_first':seeds[0]}
 
 def run(smoke=False):
@@ -85,7 +85,7 @@ def run(smoke=False):
                     if smoke or done%3000==0:
                         eta=(total-done)/(done/(time.time()-t0)) if done>0 else 0
                         print(f"  {key}: RMSE={results[key]['rmse_mean']:.4f} R̄={results[key]['gamma_mean']:.3f} "
-                              f"realized={results[key]['realized_troll_count']} [{done}/{total} ETA {eta:.0f}s]")
+                              f"realised={results[key]['realized_troll_count']} [{done}/{total} ETA {eta:.0f}s]")
     out={'config':{'MC':mc,'speed':SPEED,'Ns':ns,'trolls':trs,'models':MODELS,'k_T2':K_T2,
                    'seed':'SeedSequence([campaign,traj,N,tr_milli,model,coh,k,mc])',
                    'engine':'adversary_ladder.py','smoke':smoke},

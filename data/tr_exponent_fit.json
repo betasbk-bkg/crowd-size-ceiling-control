@@ -1,0 +1,50 @@
+{
+ "config": {
+  "model": "e^2=(kg v tau_eff)^2+(ca tr^p v Tc/sqrtN)^2",
+  "tau_eff": 0.5080236686287425,
+  "Tc": 0.5833333333333334,
+  "data": "campaign_main_mc50_fixed_zzfix.json T0 120 cells"
+ },
+ "results": {
+  "circle": {
+   "p_free": 0.683,
+   "kappa_g": 0.317,
+   "c_a": 1.2,
+   "R2_free": 0.918,
+   "R2_p1": 0.889,
+   "R2_p05": 0.9,
+   "dAIC_free_minus_p1": -34.6,
+   "dAIC_p05_minus_p1": -13.2
+  },
+  "square": {
+   "p_free": 0.458,
+   "kappa_g": 0.455,
+   "c_a": 0.725,
+   "R2_free": 0.875,
+   "R2_p1": 0.764,
+   "R2_p05": 0.874,
+   "dAIC_free_minus_p1": -74.4,
+   "dAIC_p05_minus_p1": -75.1
+  },
+  "lemniscate": {
+   "p_free": 0.609,
+   "kappa_g": 0.497,
+   "c_a": 0.869,
+   "R2_free": 0.862,
+   "R2_p1": 0.819,
+   "R2_p05": 0.856,
+   "dAIC_free_minus_p1": -30.6,
+   "dAIC_p05_minus_p1": -27.1
+  },
+  "zigzag": {
+   "p_free": 0.564,
+   "kappa_g": 0.564,
+   "c_a": 0.377,
+   "R2_free": 0.247,
+   "R2_p1": 0.233,
+   "R2_p05": 0.246,
+   "dAIC_free_minus_p1": -0.2,
+   "dAIC_p05_minus_p1": -2.1
+  }
+ }
+}

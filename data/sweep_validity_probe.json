@@ -1,0 +1,214 @@
+{
+  "probe": {
+    "circle": {
+      "param": "R",
+      "probe": [
+        {
+          "level": 1.5,
+          "a": 1.5432,
+          "b": 0.0784,
+          "r2": 0.533,
+          "tracking_failure": true
+        },
+        {
+          "level": 2.5,
+          "a": 1.2214,
+          "b": 0.4319,
+          "r2": 0.996,
+          "tracking_failure": false
+        },
+        {
+          "level": 5.0,
+          "a": 0.8981,
+          "b": 0.3977,
+          "r2": 0.989,
+          "tracking_failure": false
+        },
+        {
+          "level": 7.5,
+          "a": 0.7962,
+          "b": 0.3658,
+          "r2": 0.927,
+          "tracking_failure": false
+        },
+        {
+          "level": 10.0,
+          "a": 0.7897,
+          "b": 0.3076,
+          "r2": 0.825,
+          "tracking_failure": false
+        },
+        {
+          "level": 15.0,
+          "a": 0.7661,
+          "b": 0.2645,
+          "r2": 0.785,
+          "tracking_failure": false
+        },
+        {
+          "level": 20.0,
+          "a": 0.735,
+          "b": 0.327,
+          "r2": 0.85,
+          "tracking_failure": false
+        },
+        {
+          "level": 40.0,
+          "a": 0.5863,
+          "b": 0.6552,
+          "r2": 0.995,
+          "tracking_failure": false
+        }
+      ],
+      "valid_from": 2.5,
+      "planned_levels": [
+        5.0,
+        7.5,
+        10.0,
+        15.0,
+        20.0
+      ],
+      "planned_inside_valid_range": true
+    },
+    "square": {
+      "param": "h",
+      "probe": [
+        {
+          "level": 1.5,
+          "a": 1.3756,
+          "b": 0.2031,
+          "r2": 0.961,
+          "tracking_failure": true
+        },
+        {
+          "level": 2.5,
+          "a": 1.1962,
+          "b": 0.1778,
+          "r2": 0.834,
+          "tracking_failure": false
+        },
+        {
+          "level": 5.0,
+          "a": 1.3613,
+          "b": -0.031,
+          "r2": 0.401,
+          "tracking_failure": false
+        },
+        {
+          "level": 7.5,
+          "a": 1.1354,
+          "b": 0.2124,
+          "r2": 0.949,
+          "tracking_failure": false
+        },
+        {
+          "level": 10.0,
+          "a": 1.1267,
+          "b": 0.2235,
+          "r2": 0.844,
+          "tracking_failure": false
+        },
+        {
+          "level": 15.0,
+          "a": 1.1651,
+          "b": 0.0612,
+          "r2": 0.488,
+          "tracking_failure": false
+        },
+        {
+          "level": 20.0,
+          "a": 1.0967,
+          "b": 0.0969,
+          "r2": 0.538,
+          "tracking_failure": false
+        },
+        {
+          "level": 40.0,
+          "a": 1.0414,
+          "b": 0.1263,
+          "r2": 0.221,
+          "tracking_failure": false
+        }
+      ],
+      "valid_from": 2.5,
+      "planned_levels": [
+        5.0,
+        7.5,
+        10.0,
+        15.0,
+        20.0
+      ],
+      "planned_inside_valid_range": true
+    },
+    "lemniscate": {
+      "param": "a",
+      "probe": [
+        {
+          "level": 1.05,
+          "a": 1.2776,
+          "b": 0.0459,
+          "r2": 0.963,
+          "tracking_failure": true
+        },
+        {
+          "level": 1.75,
+          "a": 1.1699,
+          "b": -0.0028,
+          "r2": 0.003,
+          "tracking_failure": true
+        },
+        {
+          "level": 3.5,
+          "a": 1.2741,
+          "b": 0.0542,
+          "r2": 0.195,
+          "tracking_failure": false
+        },
+        {
+          "level": 5.0,
+          "a": 1.4,
+          "b": 0.1068,
+          "r2": 0.527,
+          "tracking_failure": false
+        },
+        {
+          "level": 7.0,
+          "a": 1.2366,
+          "b": 0.1519,
+          "r2": 0.74,
+          "tracking_failure": false
+        },
+        {
+          "level": 10.5,
+          "a": 0.9408,
+          "b": 0.3932,
+          "r2": 0.935,
+          "tracking_failure": false
+        },
+        {
+          "level": 14.0,
+          "a": 0.8204,
+          "b": 0.4726,
+          "r2": 0.922,
+          "tracking_failure": false
+        },
+        {
+          "level": 28.0,
+          "a": 0.8295,
+          "b": 0.1879,
+          "r2": 0.697,
+          "tracking_failure": false
+        }
+      ],
+      "valid_from": 3.5,
+      "planned_levels": [
+        3.5,
+        5.0,
+        7.0,
+        10.5,
+        14.0
+      ],
+      "planned_inside_valid_range": true
+    }
+  }
+}

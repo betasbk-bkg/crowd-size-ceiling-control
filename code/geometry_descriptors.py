@@ -1,9 +1,7 @@
 """
 geometry_descriptors.py
 =======================
-Computes the formal trajectory descriptors reported in
-"When Crowd Size Stops Mattering",
-addressing reviewer point #11 (formal geometric descriptors).
+Computes the formal trajectory descriptors reported in the manuscript.
 
 For each of the four trajectories it reports:
   - mean / max curvature           (analytic for smooth curves)

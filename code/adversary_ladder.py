@@ -1,5 +1,5 @@
 """
-adversary_ladder.py  —  Paper 2 ("When Crowd Size Stops Mattering") #10 응답
+adversary_ladder.py  —  simulation engine and adversary ladder
 ================================================================
 사전명세 adversary ladder T0–T3 + coherence c.
 검증된 엔진(run_E2_E3_proper.py / paper_fullscale.py)을 그대로 내장하고,

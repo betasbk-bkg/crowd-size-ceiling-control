@@ -1,0 +1,29 @@
+{
+  "note": "zigzag descriptors recomputed with explicit definitions; open (released) vs periodic (corrected)",
+  "delay_s": 0.4333,
+  "speed": 5.0,
+  "zigzag_open": {
+    "definition": "open polyline",
+    "mean_curvature": 0.0,
+    "max_curvature": "inf (vertex)",
+    "reversal_count": 9,
+    "corner_count": 9,
+    "segment_length": 7.0711,
+    "corr_window_s": 1.4142,
+    "window_vs_delay": 3.26,
+    "perimeter": 70.71,
+    "vertex_turn_deg": 90.0
+  },
+  "zigzag_periodic": {
+    "definition": "periodic lap window",
+    "mean_curvature": 0.0,
+    "max_curvature": "inf (vertex)",
+    "reversal_count": 10,
+    "corner_count": 10,
+    "segment_length": 7.0711,
+    "corr_window_s": 1.4142,
+    "window_vs_delay": 3.26,
+    "perimeter": 70.71,
+    "vertex_turn_deg": 90.0
+  }
+}

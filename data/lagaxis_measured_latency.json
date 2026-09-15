@@ -1,0 +1,295 @@
+{
+ "config": {
+  "tau_design_frames": 26,
+  "tau_measured_frames": 52,
+  "tau_eff_design": 0.508,
+  "tau_eff_measured": 0.9414,
+  "alpha": 0.2,
+  "vote_interval": 18,
+  "speed": 5.0,
+  "geometries": [
+   "circle",
+   "square",
+   "lemniscate",
+   "zigzag"
+  ],
+  "trolls": [
+   0.2,
+   0.4
+  ],
+  "Ns": [
+   5,
+   200
+  ],
+  "MC": 50,
+  "model": "T0",
+  "zigzag": "PeriodicZigzag (corrected)",
+  "seed": "SeedSequence([2030, traj, N, tr_milli, delay, mc])",
+  "smoke": false
+ },
+ "results": {
+  "circle_tr0.20_delay26": {
+   "rmse5": 0.9497,
+   "rmse200": 0.8112,
+   "sd5": 0.0532,
+   "sd200": 0.023,
+   "benefit_pct": 14.58,
+   "welch_t": 16.722,
+   "welch_p": 0.0,
+   "tau_eff": 0.508,
+   "mc_runs": 50
+  },
+  "circle_tr0.20_delay52": {
+   "rmse5": 2.0362,
+   "rmse200": 1.6408,
+   "sd5": 0.1568,
+   "sd200": 0.1287,
+   "benefit_pct": 19.42,
+   "welch_t": 13.646,
+   "welch_p": 0.0,
+   "tau_eff": 0.9414,
+   "mc_runs": 50
+  },
+  "circle_tr0.40_delay26": {
+   "rmse5": 1.1467,
+   "rmse200": 0.8132,
+   "sd5": 0.0894,
+   "sd200": 0.0253,
+   "benefit_pct": 29.08,
+   "welch_t": 25.117,
+   "welch_p": 0.0,
+   "tau_eff": 0.508,
+   "mc_runs": 50
+  },
+  "circle_tr0.40_delay52": {
+   "rmse5": 2.1312,
+   "rmse200": 1.7229,
+   "sd5": 0.1369,
+   "sd200": 0.1314,
+   "benefit_pct": 19.16,
+   "welch_t": 15.066,
+   "welch_p": 0.0,
+   "tau_eff": 0.9414,
+   "mc_runs": 50
+  },
+  "square_tr0.20_delay26": {
+   "rmse5": 1.2314,
+   "rmse200": 1.1463,
+   "sd5": 0.0294,
+   "sd200": 0.0135,
+   "benefit_pct": 6.91,
+   "welch_t": 18.429,
+   "welch_p": 0.0,
+   "tau_eff": 0.508,
+   "mc_runs": 50
+  },
+  "square_tr0.20_delay52": {
+   "rmse5": 2.276,
+   "rmse200": 2.2773,
+   "sd5": 0.058,
+   "sd200": 0.0157,
+   "benefit_pct": -0.06,
+   "welch_t": -0.157,
+   "welch_p": 0.8755877231819655,
+   "tau_eff": 0.9414,
+   "mc_runs": 50
+  },
+  "square_tr0.40_delay26": {
+   "rmse5": 1.2752,
+   "rmse200": 1.1585,
+   "sd5": 0.0606,
+   "sd200": 0.0231,
+   "benefit_pct": 9.15,
+   "welch_t": 12.593,
+   "welch_p": 0.0,
+   "tau_eff": 0.508,
+   "mc_runs": 50
+  },
+  "square_tr0.40_delay52": {
+   "rmse5": 2.2937,
+   "rmse200": 2.271,
+   "sd5": 0.0787,
+   "sd200": 0.0233,
+   "benefit_pct": 0.99,
+   "welch_t": 1.934,
+   "welch_p": 0.05311681744456487,
+   "tau_eff": 0.9414,
+   "mc_runs": 50
+  },
+  "lemniscate_tr0.20_delay26": {
+   "rmse5": 1.335,
+   "rmse200": 1.2659,
+   "sd5": 0.0415,
+   "sd200": 0.0198,
+   "benefit_pct": 5.18,
+   "welch_t": 10.527,
+   "welch_p": 0.0,
+   "tau_eff": 0.508,
+   "mc_runs": 50
+  },
+  "lemniscate_tr0.20_delay52": {
+   "rmse5": 2.4026,
+   "rmse200": 2.4372,
+   "sd5": 0.0793,
+   "sd200": 0.0223,
+   "benefit_pct": -1.44,
+   "welch_t": -2.941,
+   "welch_p": 0.003266315730903413,
+   "tau_eff": 0.9414,
+   "mc_runs": 50
+  },
+  "lemniscate_tr0.40_delay26": {
+   "rmse5": 1.4222,
+   "rmse200": 1.2677,
+   "sd5": 0.0557,
+   "sd200": 0.0275,
+   "benefit_pct": 10.86,
+   "welch_t": 17.396,
+   "welch_p": 0.0,
+   "tau_eff": 0.508,
+   "mc_runs": 50
+  },
+  "lemniscate_tr0.40_delay52": {
+   "rmse5": 2.3426,
+   "rmse200": 2.4419,
+   "sd5": 0.1114,
+   "sd200": 0.0326,
+   "benefit_pct": -4.24,
+   "welch_t": -5.985,
+   "welch_p": 2.1635058189417578e-09,
+   "tau_eff": 0.9414,
+   "mc_runs": 50
+  },
+  "zigzag_tr0.20_delay26": {
+   "rmse5": 1.4463,
+   "rmse200": 1.4401,
+   "sd5": 0.0332,
+   "sd200": 0.0075,
+   "benefit_pct": 0.43,
+   "welch_t": 1.267,
+   "welch_p": 0.2049976163169327,
+   "tau_eff": 0.508,
+   "mc_runs": 50
+  },
+  "zigzag_tr0.20_delay52": {
+   "rmse5": 2.7136,
+   "rmse200": 2.689,
+   "sd5": 0.0894,
+   "sd200": 0.1385,
+   "benefit_pct": 0.91,
+   "welch_t": 1.047,
+   "welch_p": 0.29525489080138456,
+   "tau_eff": 0.9414,
+   "mc_runs": 50
+  },
+  "zigzag_tr0.40_delay26": {
+   "rmse5": 1.4924,
+   "rmse200": 1.4323,
+   "sd5": 0.0622,
+   "sd200": 0.0159,
+   "benefit_pct": 4.03,
+   "welch_t": 6.551,
+   "welch_p": 5.7119198260124904e-11,
+   "tau_eff": 0.508,
+   "mc_runs": 50
+  },
+  "zigzag_tr0.40_delay52": {
+   "rmse5": 2.5723,
+   "rmse200": 2.6953,
+   "sd5": 0.1063,
+   "sd200": 0.1034,
+   "benefit_pct": -4.78,
+   "welch_t": -5.804,
+   "welch_p": 6.467924862363361e-09,
+   "tau_eff": 0.9414,
+   "mc_runs": 50
+  }
+ },
+ "summary": [
+  {
+   "traj": "circle",
+   "tr": 0.2,
+   "benefit_design": 14.58,
+   "benefit_measured": 19.42,
+   "retained_frac": 1.332,
+   "p_measured": 0.0,
+   "floor_design": 0.8112,
+   "floor_measured": 1.6408
+  },
+  {
+   "traj": "circle",
+   "tr": 0.4,
+   "benefit_design": 29.08,
+   "benefit_measured": 19.16,
+   "retained_frac": 0.659,
+   "p_measured": 0.0,
+   "floor_design": 0.8132,
+   "floor_measured": 1.7229
+  },
+  {
+   "traj": "square",
+   "tr": 0.2,
+   "benefit_design": 6.91,
+   "benefit_measured": -0.06,
+   "retained_frac": -0.009,
+   "p_measured": 0.8755877231819655,
+   "floor_design": 1.1463,
+   "floor_measured": 2.2773
+  },
+  {
+   "traj": "square",
+   "tr": 0.4,
+   "benefit_design": 9.15,
+   "benefit_measured": 0.99,
+   "retained_frac": 0.108,
+   "p_measured": 0.05311681744456487,
+   "floor_design": 1.1585,
+   "floor_measured": 2.271
+  },
+  {
+   "traj": "lemniscate",
+   "tr": 0.2,
+   "benefit_design": 5.18,
+   "benefit_measured": -1.44,
+   "retained_frac": -0.278,
+   "p_measured": 0.003266315730903413,
+   "floor_design": 1.2659,
+   "floor_measured": 2.4372
+  },
+  {
+   "traj": "lemniscate",
+   "tr": 0.4,
+   "benefit_design": 10.86,
+   "benefit_measured": -4.24,
+   "retained_frac": -0.39,
+   "p_measured": 2.1635058189417578e-09,
+   "floor_design": 1.2677,
+   "floor_measured": 2.4419
+  },
+  {
+   "traj": "zigzag",
+   "tr": 0.2,
+   "benefit_design": 0.43,
+   "benefit_measured": 0.91,
+   "retained_frac": 2.116,
+   "p_measured": 0.29525489080138456,
+   "floor_design": 1.4401,
+   "floor_measured": 2.689
+  },
+  {
+   "traj": "zigzag",
+   "tr": 0.4,
+   "benefit_design": 4.03,
+   "benefit_measured": -4.78,
+   "retained_frac": -1.186,
+   "p_measured": 6.467924862363361e-09,
+   "floor_design": 1.4323,
+   "floor_measured": 2.6953
+  }
+ ],
+ "metadata": {
+  "total_runs": 1600,
+  "elapsed_sec": 718.3,
+  "timestamp": "2026-09-11 22:09:06"
+ }
+}

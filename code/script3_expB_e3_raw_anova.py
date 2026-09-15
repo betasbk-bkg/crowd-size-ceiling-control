@@ -245,7 +245,7 @@ out_anova={
     'data_source':'E3_raw_runs.json',
     'design':f"{len(NS)}N × {len(TROLLS)}troll × MC={MC} raw runs",
     'trajectories_analyzed':['circle','square'],
-    'note':'No pseudo-observation reconstruction. Direct ANOVA on actual MC realizations.',
+    'note':'No pseudo-observation reconstruction. Direct ANOVA on actual MC realisations.',
     'results':anova_results,
     'metadata':{'elapsed_sec':round(elapsed,1),'timestamp':time.strftime('%Y-%m-%d %H:%M:%S')}
 }

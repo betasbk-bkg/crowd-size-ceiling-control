@@ -1,0 +1,291 @@
+{
+ "merge": [
+  {
+   "file": "campaign_main_mc50_fixed.json",
+   "out": "campaign_main_mc50_fixed_zzfix.json",
+   "replaced": 360,
+   "unchanged": 1080,
+   "missing": []
+  },
+  {
+   "file": "speed_ext.json",
+   "out": "speed_ext_zzfix.json",
+   "replaced": 36,
+   "unchanged": 36,
+   "missing": []
+  },
+  {
+   "file": "mech_mc50.json",
+   "out": "mech_mc50_zzfix.json",
+   "replaced": 4,
+   "unchanged": 4,
+   "missing": []
+  },
+  {
+   "file": "behavior_panel.json",
+   "out": "behavior_panel_zzfix.json",
+   "replaced": 60,
+   "unchanged": 180,
+   "missing": []
+  },
+  {
+   "file": "lagaxis_results.json",
+   "out": "lagaxis_results_zzfix.json",
+   "replaced": 4,
+   "unchanged": 4,
+   "missing": []
+  }
+ ],
+ "analysis": {
+  "tableS6_zigzag_R2": {
+   "released": [
+    0.398,
+    0.3,
+    0.422,
+    0.712,
+    0.752,
+    0.824,
+    0.215,
+    0.226,
+    0.152,
+    0.16
+   ],
+   "corrected": [
+    0.935,
+    0.099,
+    0.17,
+    0.116,
+    0.076,
+    0.219,
+    0.052,
+    0.208,
+    0.29,
+    0.494
+   ]
+  },
+  "table4": {
+   "circle_0.05": {
+    "a": 0.8032,
+    "b": 0.047,
+    "b_ci": [
+     0.029,
+     0.064
+    ],
+    "attainable_pct": 2.53,
+    "released": {
+     "a": 0.8032,
+     "b": 0.047,
+     "attainable_pct": 2.53
+    }
+   },
+   "circle_0.2": {
+    "a": 0.7736,
+    "b": 0.356,
+    "b_ci": [
+     0.328,
+     0.385
+    ],
+    "attainable_pct": 17.07,
+    "released": {
+     "a": 0.7736,
+     "b": 0.356,
+     "attainable_pct": 17.07
+    }
+   },
+   "circle_0.4": {
+    "a": 0.7488,
+    "b": 0.787,
+    "b_ci": [
+     0.747,
+     0.828
+    ],
+    "attainable_pct": 31.99,
+    "released": {
+     "a": 0.7488,
+     "b": 0.787,
+     "attainable_pct": 31.99
+    }
+   },
+   "zigzag_0.05": {
+    "a": 1.4498,
+    "b": -0.065,
+    "b_ci": [
+     -0.072,
+     -0.057
+    ],
+    "attainable_pct": -2.04,
+    "released": {
+     "a": 1.9598,
+     "b": 0.043,
+     "attainable_pct": 0.97
+    }
+   },
+   "zigzag_0.2": {
+    "a": 1.435,
+    "b": 0.002,
+    "b_ci": [
+     -0.013,
+     0.016
+    ],
+    "attainable_pct": 0.05,
+    "released": {
+     "a": 1.9651,
+     "b": 0.077,
+     "attainable_pct": 1.72
+    }
+   },
+   "zigzag_0.4": {
+    "a": 1.4243,
+    "b": 0.063,
+    "b_ci": [
+     0.04,
+     0.087
+    ],
+    "attainable_pct": 1.95,
+    "released": {
+     "a": 1.9724,
+     "b": 0.046,
+     "attainable_pct": 1.03
+    }
+   }
+  },
+  "delta_rmse_range": {
+   "released": [
+    0.07,
+    1.96
+   ],
+   "corrected": [
+    -1.57,
+    3.45
+   ]
+  },
+  "per_cell_CV": {
+   "circle": 0.0386,
+   "square": 0.0213,
+   "lemniscate": 0.0228,
+   "zigzag": 0.0119
+  },
+  "quadrature": {
+   "circle": {
+    "kappa_g": 0.319,
+    "c_a": 1.67,
+    "R2": 0.889,
+    "lag_floor": 0.811
+   },
+   "square": {
+    "kappa_g": 0.457,
+    "c_a": 1.26,
+    "R2": 0.764,
+    "lag_floor": 1.162
+   },
+   "lemniscate": {
+    "kappa_g": 0.499,
+    "c_a": 1.3,
+    "R2": 0.819,
+    "lag_floor": 1.267
+   },
+   "zigzag": {
+    "kappa_g": 0.564,
+    "c_a": 0.59,
+    "R2": 0.233,
+    "lag_floor": 1.433
+   }
+  },
+  "N_c": {
+   "circle_0.05": [
+    33.7,
+    8.4,
+    1.3
+   ],
+   "circle_0.2": [
+    2118.4,
+    529.6,
+    84.7
+   ],
+   "circle_0.4": [
+    11060.6,
+    2765.2,
+    442.4
+   ],
+   "square_0.05": [
+    29.5,
+    7.4,
+    1.2
+   ],
+   "square_0.2": [
+    428.8,
+    107.2,
+    17.2
+   ],
+   "square_0.4": [
+    865.8,
+    216.5,
+    34.6
+   ],
+   "lemniscate_0.05": [
+    null,
+    null,
+    null
+   ],
+   "lemniscate_0.2": [
+    118.3,
+    29.6,
+    4.7
+   ],
+   "lemniscate_0.4": [
+    620.3,
+    155.1,
+    24.8
+   ],
+   "zigzag_0.05": [
+    null,
+    null,
+    null
+   ],
+   "zigzag_0.2": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "zigzag_0.4": [
+    19.8,
+    4.9,
+    0.8
+   ]
+  },
+  "adversary_ladder": {
+   "cells": {
+    "T0": {
+     "released": 1.9746,
+     "corrected": 1.429
+    },
+    "T1": {
+     "released": 2.1158,
+     "corrected": 1.608
+    },
+    "T2": {
+     "released": 1.9256,
+     "corrected": 1.5702
+    }
+   },
+   "T2_effect_pct": {
+    "released": -2.5,
+    "corrected": 9.9
+   }
+  },
+  "change_point": {
+   "circle": {
+    "released": 0.17,
+    "corrected": 0.17
+   },
+   "square": {
+    "released": 0.13,
+    "corrected": 0.13
+   },
+   "lemniscate": {
+    "released": 0.17,
+    "corrected": 0.17
+   }
+  }
+ }
+}
