@@ -141,8 +141,9 @@ Code: MIT (`LICENSE`). Data: CC BY 4.0 (`LICENSE-DATA`).
 
 ## Archive
 
-Archived on Zenodo under the concept DOI **10.5281/zenodo.21337367**, which always resolves to
-the latest version; the version DOI for this release is shown on its Zenodo record. The manuscript
+Archived on Zenodo. The concept DOI **10.5281/zenodo.20676802** covers all versions and always
+resolves to the latest one; each release also has its own version DOI, shown on that release's
+Zenodo record (v1.0.0: 10.5281/zenodo.20676803, v2.0.0: 10.5281/zenodo.21337367). The manuscript
 cites the concept DOI together with the version label (v2.1.0). `CHECKSUMS.txt` lists SHA-256 for
 every file in the release; it is generated over the archive contents and therefore does not list
 itself.

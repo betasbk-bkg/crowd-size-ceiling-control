@@ -9,11 +9,11 @@ authors:
 version: 2.1.0
 date-released: "2026-09-15"
 license: MIT
-doi: "10.5281/zenodo.21337367"
+doi: "10.5281/zenodo.20676802"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.21337367"
-    description: "Concept DOI — always resolves to the latest version of this archive"
+    value: "10.5281/zenodo.20676802"
+    description: "Concept DOI — covers all versions and resolves to the latest one"
 repository-code: "https://github.com/betasbk-bkg/crowd-size-ceiling-control"
 keywords:
   - "crowd-sourced control"
