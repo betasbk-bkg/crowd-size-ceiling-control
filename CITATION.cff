@@ -6,9 +6,14 @@ authors:
     given-names: "BongKeun"
     orcid: "https://orcid.org/0009-0008-3120-8126"
     affiliation: "Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)"
-version: 2.0.0
-date-released: "2026-07-12"
+version: 2.1.0
+date-released: "2026-09-15"
 license: MIT
+doi: "10.5281/zenodo.21337367"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21337367"
+    description: "Concept DOI — always resolves to the latest version of this archive"
 repository-code: "https://github.com/betasbk-bkg/crowd-size-ceiling-control"
 keywords:
   - "crowd-sourced control"
@@ -23,6 +28,6 @@ preferred-citation:
     - family-names: "Song"
       given-names: "BongKeun"
       orcid: "https://orcid.org/0009-0008-3120-8126"
-  title: "When Crowd Size Stops Mattering: Characterizing the Ceiling Effect in Crowd-Sourced Continuous Control — A Simulation Study"
-  journal: "Scientific Reports (submitted, 2026)"
+  title: "Crowd size benefit in collective continuous control is conditional on adversarial ratio and trajectory geometry"
+  journal: "Scientific Reports (under review, 2026)"
   year: 2026
