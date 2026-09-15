@@ -50,8 +50,11 @@ compared directly (`*_zzfix.json` are the corrected versions).
 code/      simulation engine, campaign scripts, figure scripts
 analysis/  paper-statistic scripts — every table and figure maps here or to code/
 data/      raw Monte Carlo result data (JSON/CSV)
-figures/   final figures (PDF + PNG); figures/v2.0.0/ holds the superseded v2.0.0 renders
+figures/   final figures (PDF + PNG)
 ```
+
+The superseded v2.0.0 figures are not carried forward here; they remain in the v2.0.0 Zenodo
+record (10.5281/zenodo.21337367).
 
 ### data/ — naming
 
