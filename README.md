@@ -21,7 +21,11 @@ narrowing beyond N = 400 without a critical crowd size.
 
 All results are simulation-based; no human-participant data are used.
 
-## v2.1.0 changes (2026-09)
+## v2.1.1 changes (2026-09-20)
+
+Analysis-path correction only; no data changed. `analysis/ceiling_fit_tenlevel.py`, `table4_ceiling_params.py`, `changepoint_analysis.py` and `s5_quadrature_calibration.py` now read `campaign_main_mc50_fixed_zzfix.json` (the corrected campaign) instead of the pre-correction file; `supplement_ceiling_fits_tenlevel.csv` is regenerated from it; the Table 3 provenance is stated (merge step); the full-rebuild order runs the lag-axis experiment before the zigzag re-run and merge; the superseded heat-map script is removed.
+
+## v2.1.0 changes (2026-09-16)
 
 1. **Periodic zigzag path.** The released zigzag was an open polyline of length 70.71 m while
    the agent covers up to 325 m in the 65 s horizon, so on reaching the far end the look-ahead
@@ -113,9 +117,8 @@ excluded from the Λ regression reported in Supplementary Fig. S4b. JSON `Infini
 | `anova_diagnostics.py` | Table 2 (η², F, P) and assumption diagnostics |
 | `changepoint_analysis.py` | Transition-region change-points with bootstrap CIs |
 | `s5_quadrature_calibration.py` | κ_g, c_a, R² and implied-b diagnostics |
-| `lagaxis_experiment.py` | Table 3 (runs the lag-axis simulations) |
+| `lagaxis_experiment.py` | Lag-axis simulations (τ, α); the corrected Table 3 file `lagaxis_results_zzfix.json` is produced when `code/merge_and_reanalyze_zzfix.py` merges the re-run zigzag cells into its output |
 | `bugfix_N5_tr30_rerun.py` | The 600-run participant-composition re-simulation |
-| `make_fig1_heatmap.py` | v2.0.0 ten-level R² heat map (superseded by Fig. 2b) |
 
 Initial-campaign (MC = 15) scripts `script1/2/3`, `sim_lemniscate_zigzag_troll15_3` and
 `sim_v2_fullsweep` produce the `E2f_*` / `E3_*` data files. Two of them opened a pre-v1 MC = 10 reference set (part1_e2f.json) that is not part of this archive, for an optional sanity check;
@@ -146,8 +149,8 @@ Code: MIT (`LICENSE`). Data: CC BY 4.0 (`LICENSE-DATA`).
 
 Archived on Zenodo. The concept DOI **10.5281/zenodo.20676802** covers all versions and always
 resolves to the latest one; each release also has its own version DOI, shown on that release's
-Zenodo record (v1.0.0: 10.5281/zenodo.20676803, v2.0.0: 10.5281/zenodo.21337367). The manuscript
-cites the concept DOI together with the version label (v2.1.0). `CHECKSUMS.txt` lists SHA-256 for
+Zenodo record (v1.0.0: 10.5281/zenodo.20676803, v2.0.0: 10.5281/zenodo.21337367, v2.1.0: 10.5281/zenodo.22779940). The manuscript
+cites the concept DOI together with the version label (v2.1.1). `CHECKSUMS.txt` lists SHA-256 for
 every file in the release; it is generated over the archive contents and therefore does not list
 itself.
 

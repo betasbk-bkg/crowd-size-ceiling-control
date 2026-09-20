@@ -6,8 +6,8 @@ authors:
     given-names: "BongKeun"
     orcid: "https://orcid.org/0009-0008-3120-8126"
     affiliation: "Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)"
-version: 2.1.0
-date-released: "2026-09-15"
+version: 2.1.1
+date-released: 2026-09-20
 license: MIT
 doi: "10.5281/zenodo.20676802"
 identifiers:

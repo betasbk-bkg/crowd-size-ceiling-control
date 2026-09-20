@@ -1,4 +1,4 @@
-# Reproduction Guide (v2.1.0)
+# Reproduction Guide (v2.1.1)
 
 Mapping from each element of the paper and supplement to the data file and script that produce
 it. Engine constants and the per-condition `SeedSequence` scheme make every run deterministic.
@@ -15,7 +15,7 @@ Run scripts from inside their own directory (`cd code` or `cd analysis`); paths 
 |---------|------|--------|
 | Table 1 (ceiling R², six-level subset) | `campaign_main_mc50_fixed_zzfix.json` | `analysis/ceiling_fit_tenlevel.py` |
 | Table 2 (two-way ANOVA, η², F, P) | `anova_raw_mc50.json` | `analysis/anova_diagnostics.py` |
-| Table 3 (lag axis, τ and α) | `lagaxis_results_zzfix.json` | `analysis/lagaxis_experiment.py` |
+| Table 3 (lag axis, τ and α) | `lagaxis_results_zzfix.json` | `analysis/lagaxis_experiment.py` (non-zigzag cells) + `code/rerun_zigzag_periodic.py --block 5` and `code/merge_and_reanalyze_zzfix.py` (corrected zigzag cells, merged) |
 | Table 4 (fitted a, b, 95% CI, attainable) | `campaign_main_mc50_fixed_zzfix.json` | `analysis/table4_ceiling_params.py` |
 
 ## Main figures
@@ -80,8 +80,11 @@ python campaign_anova_raw.py
 python campaign_behavior.py
 python campaign_speed_mech.py
 python campaign_mechanism.py
-python rerun_zigzag_periodic.py         # 23,400 runs — corrected zigzag
-python merge_and_reanalyze_zzfix.py     # merge + re-analysis report
+cd ../analysis
+python lagaxis_experiment.py            # lag-axis cells, released zigzag path
+cd ../code
+python rerun_zigzag_periodic.py         # 23,400 runs — corrected zigzag cells for every campaign above
+python merge_and_reanalyze_zzfix.py     # writes the *_zzfix.json files used by everything below
 python zzfix_mechanism_descriptors.py
 python sweep_geometry_scale.py
 python circle_range_ext.py
@@ -96,13 +99,13 @@ python localization_index_ci.py
 python tr_exponent_fit.py
 python zigzag_lowspeed_probe.py         # or --block 0..3 then --merge
 python make_figures_revision.py
-cd ../analysis
+cd ../analysis                          # all of these read the *_zzfix.json files
 python ceiling_fit_tenlevel.py
 python table4_ceiling_params.py
 python anova_diagnostics.py
 python changepoint_analysis.py
 python s5_quadrature_calibration.py
-python lagaxis_experiment.py
+python anova_raw_mc15.py
 ```
 
 ## Data files not tied to a single element
