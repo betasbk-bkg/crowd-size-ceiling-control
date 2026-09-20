@@ -21,11 +21,15 @@ narrowing beyond N = 400 without a critical crowd size.
 
 All results are simulation-based; no human-participant data are used.
 
-## v2.1.1 changes (2026-09-20)
+## v2.1.2 changes
+
+Housekeeping on top of v2.1.1: the superseded v2.0.0 heat-map script, which had survived the v2.1.1 upload, is removed, and development-history notes were taken out of script docstrings. No data or analysis code changed.
+
+## v2.1.1 changes
 
 Analysis-path correction only; no data changed. `analysis/ceiling_fit_tenlevel.py`, `table4_ceiling_params.py`, `changepoint_analysis.py` and `s5_quadrature_calibration.py` now read `campaign_main_mc50_fixed_zzfix.json` (the corrected campaign) instead of the pre-correction file; `supplement_ceiling_fits_tenlevel.csv` is regenerated from it; the Table 3 provenance is stated (merge step); the full-rebuild order runs the lag-axis experiment before the zigzag re-run and merge; the superseded heat-map script is removed.
 
-## v2.1.0 changes (2026-09-16)
+## v2.1.0 changes
 
 1. **Periodic zigzag path.** The released zigzag was an open polyline of length 70.71 m while
    the agent covers up to 325 m in the 65 s horizon, so on reaching the far end the look-ahead
@@ -149,8 +153,8 @@ Code: MIT (`LICENSE`). Data: CC BY 4.0 (`LICENSE-DATA`).
 
 Archived on Zenodo. The concept DOI **10.5281/zenodo.20676802** covers all versions and always
 resolves to the latest one; each release also has its own version DOI, shown on that release's
-Zenodo record (v1.0.0: 10.5281/zenodo.20676803, v2.0.0: 10.5281/zenodo.21337367, v2.1.0: 10.5281/zenodo.22779940). The manuscript
-cites the concept DOI together with the version label (v2.1.1). `CHECKSUMS.txt` lists SHA-256 for
+Zenodo record (v1.0.0: 10.5281/zenodo.20676803, v2.0.0: 10.5281/zenodo.21337367, v2.1.0: 10.5281/zenodo.22779940, v2.1.1: 10.5281/zenodo.22853544). The manuscript
+cites the concept DOI together with the version label (v2.1.2). `CHECKSUMS.txt` lists SHA-256 for
 every file in the release; it is generated over the archive contents and therefore does not list
 itself.
 
