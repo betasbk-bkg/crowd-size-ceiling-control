@@ -125,8 +125,7 @@ def main():
     if a_.smoke:
         print("SMOKE: pipeline check only, results not interpreted")
 
-    # published campaign: circle/square/lemniscate as released, zigzag corrected
-    rel = json.load(open(os.path.join(DATA, 'campaign_main_mc50_fixed.json')))['results']
+    # published campaign (corrected zigzag; every other geometry is identical to the released file)
     fixp = os.path.join(DATA, 'campaign_main_mc50_fixed_zzfix.json')
     if not os.path.exists(fixp):
         raise SystemExit("run merge_and_reanalyze_zzfix.py first "
@@ -141,7 +140,7 @@ def main():
     t0, n = time.time(), 0
     for tj in geoms:
         obj = traj(tj)
-        src = fix if tj == 'zigzag' else rel
+        src = fix
         for tr in trs:
             big = {}
             for N in BIG:

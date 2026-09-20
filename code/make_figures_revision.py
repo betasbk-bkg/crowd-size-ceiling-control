@@ -106,8 +106,6 @@ def fig1():
         else: ax.set_ylim(-3.5, 8.5)
         if g == 'zigzag': ax.legend(loc='upper right', fontsize=7, ncol=3, handlelength=1.6, bbox_to_anchor=(1.0, 1.02))
         panel(ax, 'abcd'[k], x=-0.22 if g != 'zigzag' else -0.06, y=1.02 if g != 'zigzag' else 1.04)
-    fig.text(0.5, 0.005, 'Adversarial ratio 20%, uniform adversaries (T0), single realisations over the 65 s horizon. '
-             'The zigzag panel shows the first 60 m of the periodic path.', ha='center', fontsize=7, color='0.3')
     save(fig, 'fig1_trajectories')
 
 # ------------------------------------------------------------------ Fig 2
@@ -123,8 +121,6 @@ def fig2():
         a.plot(trs*100, ic+sl*trs, ls='--', lw=1.0, color=COL[g], alpha=0.6)
     a.axhline(0, color='0.5', lw=1.0); a.set_xlabel('Adversarial ratio tr (%)'); a.set_ylabel('Crowd coefficient b (m)')
     a.legend(loc='upper left'); panel(a, 'a')
-    fig.text(0.5, -0.03, 'a: b from the a + b/√N fit (weighted least squares, 1/sem²), bars 95% CI, dashed lines linear fits in tr. '
-             'b: ceiling-fit R² on the six-level grid of Table 1 (unweighted fit on cell means, corrected data).', ha='center', fontsize=7, color='0.3')
     M = np.array([[ols(curve(g, tr)[0])[1] for tr in TR6] for g in GEOMS])
     im = b.imshow(M, cmap='RdYlGn', vmin=0, vmax=1, aspect='auto')
     b.set_xticks(range(6)); b.set_xticklabels([f"{int(t*100)}%" for t in TR6]); b.set_yticks(range(4)); b.set_yticklabels([LABEL[g] for g in GEOMS])
@@ -154,9 +150,6 @@ def fig3():
         if k in (2, 3): ax.set_xlabel('Crowd size N')
         if k in (0, 2): ax.set_ylabel('RMSE (m)')
         if k == 0: ax.legend(loc='upper right')
-    fig.text(0.5, 0.005, 'Filled markers: N = 5–200 (MC = 50, bars 95% CI). Dashed: a + b/√N fitted on N ≤ 200 and extrapolated. '
-             'Open markers: measured at N = 400–3,200 (MC = 50), not used in the fit.\n'
-             'Grey band: N ≥ 400, where the measured RMSE changes by less than 1.5% in every condition.', ha='center', fontsize=7, color='0.3')
     fig.subplots_adjust(hspace=0.28, wspace=0.22); save(fig, 'fig3_rmse_vs_crowd_size')
 
 # ------------------------------------------------------------------ Fig 4
@@ -172,7 +165,6 @@ def fig4():
         if k == 0: ax.set_ylabel('RMSE (m)')
     h, l = axes[0].get_legend_handles_labels()
     fig.legend(h, l, loc='lower center', ncol=3, bbox_to_anchor=(0.5, -0.12), fontsize=7.5)
-    fig.text(0.5, -0.20, 'Adversarial ratio 40%. T1: committed anti-target votes. T2: anti-target vote held for 10 vote intervals. Bars 95% CI (MC = 50).', ha='center', fontsize=7, color='0.3')
     fig.subplots_adjust(wspace=0.38); save(fig, 'fig4_adversary_ladder')
 
 # ------------------------------------------------------------------ Fig S1
@@ -198,8 +190,6 @@ def figS1():
             else:
                 m, e = f"{p[i]:.2e}".split('e'); lab = rf'$P = {float(m):.1f} \times 10^{{{int(e)}}}$'
             ax.text(i, eta[i]+max(eta)*0.02, lab, ha='center', va='bottom', fontsize=6.5)
-    fig.text(0.5, -0.03, 'Two-way ANOVA (N × tr) on per-run RMSE, MC = 50 per cell, 36 cells. P values from the F distribution; '
-             'the circle N effect underflows double precision.', ha='center', fontsize=7, color='0.3')
     fig.subplots_adjust(wspace=0.35); save(fig, 'figS1_anova_eta2')
 
 # ------------------------------------------------------------------ Fig S2
@@ -244,8 +234,7 @@ def figS3():
     ax.xaxis.set_minor_locator(matplotlib.ticker.NullLocator())
     ax.set_xlabel('Circle radius R (m)'); ax.set_ylabel('Error floor a (m)'); ax.legend(loc='upper right', fontsize=6.5)
     ax.text(0.98, 0.30, 'shaded: floor measured directly\nat R = 1,000 m, N = 3,200 (±1 s.d.)', transform=ax.transAxes, ha='right', fontsize=6.5, color='0.4')
-    fig.text(0.5, -0.04, 'a from the a + b/√N fit (weighted LS) at each radius; R = 5–20 m from the geometry sweep, R = 2.5, 40, 80 m from the radius extension (MC = 50).\nRadii below L/2 = 1 m cannot be tracked by the steering law (failure observed at R = 1.5 m, clean tracking from 2.5 m).',
-             ha='center', fontsize=7, color='0.3'); save(fig, 'figS3_size_sweep')
+    save(fig, 'figS3_size_sweep')
 
 # ------------------------------------------------------------------ Fig S4
 def figS4():
@@ -262,8 +251,7 @@ def figS4():
     a2.axhline(0, color='0.5', lw=1.0); a2.set_xscale('log'); a2.set_xlabel('Λ = corner spacing / delay travel distance'); a2.set_ylabel('Floor relative to circle (%)')
     r2 = A['P5_collapse']; a2.text(0.03, 0.95, f"log-linear fit: R² = {r2['tr0.20']['R2']:.2f} (tr 20%), {r2['tr0.40']['R2']:.2f} (tr 40%)\nfilled: tr 20%, open: tr 40%",
                                    transform=a2.transAxes, va='top', fontsize=6.5, color='0.35'); a2.set_ylim(-20, 100); a2.set_xticks([1, 3, 10, 30]); a2.set_xticklabels(['1', '3', '10', '30']); a2.xaxis.set_minor_locator(matplotlib.ticker.NullLocator()); panel(a2, 'b')
-    fig.text(0.5, -0.05, 'Regular n-gons at three perimeters (25,200 runs, MC = 50). The floor is not monotone in n and does not order by Λ; equal Λ can give opposite signs (n = 4 vs n = 8).',
-             ha='center', fontsize=7, color='0.3'); save(fig, 'figS4_shape_sweep')
+    save(fig, 'figS4_shape_sweep')
 
 # ------------------------------------------------------------------ Fig S5
 def figS5():
@@ -275,8 +263,7 @@ def figS5():
         ax.bar(xs+(k-1)*w, v, w, yerr=[lo, hi], capsize=2, color=['#c8c8c8', '#8a8a8a', '#3f3f3f'][k], edgecolor='white', linewidth=1.0, label=f'N = {N}, tr = {int(tr*100)}%', error_kw=dict(lw=1.0))
     ax.axhline(1.0, color='0.45', lw=1.0, ls='--'); ax.text(3.35, 1.05, 'uniform\nalong path', fontsize=6.5, color='0.45', ha='right')
     ax.set_xticks(xs); ax.set_xticklabels([LABEL[g] for g in order]); ax.set_ylabel('Error at reversals / error mid-segment'); ax.legend(fontsize=6.5, loc='upper right')
-    fig.text(0.5, -0.04, 'Ratio of phase-averaged RMSE in the 0–10% and 90–100% segment windows to the 40–60% window (MC = 20, bootstrap 95% CI, B = 2000).',
-             ha='center', fontsize=7, color='0.3'); save(fig, 'figS5_error_localisation')
+    save(fig, 'figS5_error_localisation')
 
 if __name__ == '__main__':
     want = sys.argv[sys.argv.index('--fig')+1] if '--fig' in sys.argv else 'all'

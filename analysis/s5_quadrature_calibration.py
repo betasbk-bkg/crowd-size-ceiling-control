@@ -9,7 +9,7 @@ implied-b/empirical-b ratios: tr=40% 1.13, tr=5% 0.40, tr=20% 0.71.
 import json, numpy as np, os
 from scipy.optimize import least_squares
 HERE=os.path.dirname(os.path.abspath(__file__)); ROOT=os.path.dirname(HERE)
-D=json.load(open(os.path.join(ROOT,'data/campaign_main_mc50_fixed.json')))['results']
+D=json.load(open(os.path.join(ROOT,'data/campaign_main_mc50_fixed_zzfix.json')))['results']
 NS=np.array([5,10,15,20,25,30,40,50,75,100,150,200],float)
 TRS=np.array([0.05,0.10,0.13,0.15,0.17,0.20,0.25,0.30,0.35,0.40])
 v=5.0; tau=26/60; Tv=0.3; dt=1/60; alpha=0.2

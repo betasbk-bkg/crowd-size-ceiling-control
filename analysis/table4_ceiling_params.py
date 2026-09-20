@@ -6,7 +6,7 @@ Verified 2026-07-12: reproduces all 6 rows of Table 4 (a to 4 dp, b to 3 dp, CIs
 """
 import json, numpy as np, os
 HERE=os.path.dirname(os.path.abspath(__file__)); ROOT=os.path.dirname(HERE)
-D=json.load(open(os.path.join(ROOT,'data/campaign_main_mc50_fixed.json')))['results']
+D=json.load(open(os.path.join(ROOT,'data/campaign_main_mc50_fixed_zzfix.json')))['results']
 NS=np.array([5,10,15,20,25,30,40,50,75,100,150,200],float)
 X=np.column_stack([np.ones_like(NS),1/np.sqrt(NS)])
 for tj,tr in [('circle',0.05),('circle',0.20),('circle',0.40),('zigzag',0.05),('zigzag',0.20),('zigzag',0.40)]:

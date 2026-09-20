@@ -9,7 +9,7 @@ lemniscate 17% (bootstrap concentrated on the 17% grid level).
 import json, numpy as np, os
 from scipy import optimize
 HERE=os.path.dirname(os.path.abspath(__file__)); ROOT=os.path.dirname(HERE)
-D=json.load(open(os.path.join(ROOT,'data/campaign_main_mc50_fixed.json')))['results']
+D=json.load(open(os.path.join(ROOT,'data/campaign_main_mc50_fixed_zzfix.json')))['results']
 NS=[5,10,15,20,25,30,40,50,75,100,150,200]
 TRS=np.array([0.05,0.10,0.13,0.15,0.17,0.20,0.25,0.30,0.35,0.40])
 cm=lambda N,a,b: a+b/np.sqrt(N)
