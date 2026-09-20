@@ -2,7 +2,7 @@
 a,b via weighted least squares (weights 1/sem^2, sem = std/sqrt(50)) on cell means;
 95% CIs via known-variance GLS covariance (X'WX)^-1 with z = 1.96;
 attainable reduction = (b/sqrt(5)) / (a + b/sqrt(5)).
-Verified 2026-07-12: reproduces all 6 rows of Table 4 (a to 4 dp, b to 3 dp, CIs, attainable).
+Reproduces: reproduces all 6 rows of Table 4 (a to 4 dp, b to 3 dp, CIs, attainable).
 """
 import json, numpy as np, os
 HERE=os.path.dirname(os.path.abspath(__file__)); ROOT=os.path.dirname(HERE)

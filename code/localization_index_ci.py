@@ -5,14 +5,14 @@ localization_index_ci.py — phase-averaged error localisation index with bootst
 Replaces the retracted corner peak-to-mean statistic. Index = RMSE in the segment-phase
 windows 0–10% and 90–100% (around a corner/reversal) divided by RMSE in the 40–60% window
 (mid-segment). Phase = arc-length position within one segment (zigzag tooth, square side,
-circle quarter, lemniscate quarter). Reproduces the container run of 2026-09-12 (MC = 20,
+circle quarter, lemniscate quarter). Reproduces the archived run (MC = 20,
 B = 2000) that was never archived locally.
 
 READS : engine only
 WRITES: ../data/localization_index_ci.json
 RUN   : cd code ; python localization_index_ci.py     (240 runs, ~1 min)
 Seed  : SeedSequence([777, TAG_ID[tag], N, int(tr*1000), mc]) with a fixed name->id map
-        (the 2026-09-12 container run used abs(hash(tag)), which Python salts per process,
+        (an earlier draft used abs(hash(tag)), which Python salts per process,
         so those values (zigzag 2.78, circle 1.00) are not reproducible; this archived run is).
 """
 import json, numpy as np

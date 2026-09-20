@@ -3,7 +3,7 @@ Raw two-way ANOVA (N x tr, n=50/cell) on per-run RMSE; eta^2 = SS/SS_total*100
 (residual row reported as 100 - sum of the three effects in the paper).
 Diagnostics: Shapiro-Wilk on pooled cell-centered residuals; Levene (median-centered,
 scipy default) across the 36 cells; max/min cell-variance ratio; residual skew.
-Verified 2026-07-12: eta^2/F match Table 2 to reported precision;
+Reproduces: eta^2/F match Table 2 to reported precision;
 p-values circle (tr 2.7e-277, int 8.9e-248; N underflow < 1e-300),
 square (N 2.5e-189, tr 5.5e-184, int 5.7e-68); Levene circle 2.0e-72, square 2.1e-60 (< 1e-59).
 """

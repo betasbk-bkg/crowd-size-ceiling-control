@@ -3,7 +3,7 @@ Model: e^2 = e_lag^2 + e_adv^2, e_lag = kappa_g*v*tau_eff, e_adv = c_a*tr*v*T_c/
 Constants: v=5, tau=26/60 s, T_v=0.3 s, alpha=0.2, dt=1/60;
 tau_eff = tau - dt/ln(1-alpha) = 0.508 s, T_c = tau + T_v/2 = 0.583 s.
 Fit: nonlinear least squares over the full circle grid (120 cells, corrected data).
-Verified 2026-07-12: kappa_g=0.319, c_a=1.67, R^2=0.889;
+Reproduces: kappa_g=0.319, c_a=1.67, R^2=0.889;
 implied-b/empirical-b ratios: tr=40% 1.13, tr=5% 0.40, tr=20% 0.71.
 """
 import json, numpy as np, os

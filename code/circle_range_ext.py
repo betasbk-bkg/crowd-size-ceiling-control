@@ -3,8 +3,7 @@
 circle_range_ext.py — circle radius extension (R = 2.5, 40, 80 m) for the size-scaling law.
 
 WHY: sweep_geometry_scale.json covers R = 5..20 m (4-fold). To discriminate a0 + c/R from
-a0 + c/R^2 the range is widened to 2.5..80 m (32-fold). This reproduces the run first made
-in a container session on 2026-09-12 that was never archived locally.
+a0 + c/R^2 the range is widened to 2.5..80 m (32-fold).
 
 READS : ../data/sweep_geometry_scale.json   (R = 5, 7.5, 10, 15, 20)
 WRITES: ../data/circle_range_ext.json
@@ -12,7 +11,7 @@ RUN   : cd code ; python circle_range_ext.py          (3,600 runs; a few minutes
         python circle_range_ext.py --smoke            (MC = 3, pipeline check)
 
 Model: T1 with coherence 0.0 == uniform adversary (bit-identical to T0 in this engine).
-Seed : SeedSequence([2029, int(R*10), N, int(tr*1000), mc]) — same as the container run.
+Seed : SeedSequence([2029, int(R*10), N, int(tr*1000), mc]) 
 """
 import sys, json, time, numpy as np
 import adversary_ladder as E, campaign as C

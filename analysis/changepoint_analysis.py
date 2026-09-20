@@ -3,7 +3,7 @@ b(tr): ceiling fit per tr (curve_fit, cell means, T0). Two-segment fit: two line
 segments sharing the breakpoint sample (x[:bp+1] / x[bp:]), breakpoint minimizing
 total SSE over the interior grid. 95% CI: parametric bootstrap (B=400) resampling
 per-cell means with their Monte Carlo standard errors, seed=42.
-Verified 2026-07-12 (corrected data): circle 17% CI[17,30], square 13% CI[13,17],
+Reproduces (corrected data): circle 17% CI[17,30], square 13% CI[13,17],
 lemniscate 17% (bootstrap concentrated on the 17% grid level).
 """
 import json, numpy as np, os
